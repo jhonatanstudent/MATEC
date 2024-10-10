@@ -1,17 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meu Site Simples</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-</body>
-    <header class="cabeçario">
-<h1>matec</h1>
-<ul>
-    
-</ul>
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <section id="home">
+        <h2>Seção Home</h2>
+        <p>Este é o conteúdo da página inicial.</p>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Nós</h2>
+        <p>Informações sobre o site.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco via email.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Site</p>
+    </footer>
+</body>
 </html>
+2. Crie um arquivo CSS (ex: styles.css):
+css
+Copiar código
+/* Estilos básicos para o site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
